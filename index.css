@@ -1,0 +1,76 @@
+/* HEADER */
+
+header {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    width: 100%;
+    margin: auto 0;
+    font-family: Helvetica, sans-serif;
+}
+
+nav h1 {
+    font-weight: 800;
+}
+
+nav h2 {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 100;
+}
+
+/* MAIN */
+.chatbox {
+    height: 50vh;
+    border: 2px solid black;
+    overflow: scroll;
+    display:flex;
+    flex-direction: column-reverse;
+}
+
+.message {
+    background: rgb(241,240,240);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    height: auto;
+    padding: 5px;
+}
+
+/* DELETE ICON */
+span#deleteIcon {
+    cursor: pointer;
+    padding-right: 5vw;
+
+    transition: all .3s ease-in-out;
+}
+
+span#deleteIcon:hover {
+    color: rgb(250, 62, 62);
+}
+
+/* FORM WRAPPER */
+.formWrapper {
+    padding-top: 1vh;
+    display: flex;
+    align-items: center;
+}
+
+form {
+    padding-right: 0.2vw;
+}
+
+/* INPUT STYLE */
+#inputChat {
+    width: 59vw;
+    line-height: 1.5;
+    margin: 0;
+    padding: 3px;
+    font-family: Helvetica, sans-serif
+}
+
+#inputChat:focus {
+    outline-color: gainsboro;
+}
